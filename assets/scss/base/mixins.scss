@@ -1,0 +1,14 @@
+@mixin transition($time) {
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -o-transition: $time;
+    transition: $time;
+}
+
+@mixin boxy() {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+//@include transition(2.0s);
+//@include boxy();
