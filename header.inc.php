@@ -13,16 +13,6 @@
 
     <body>
 
-
-        <!-- == scripts == -->
-
-      	<script src="assets/js/min/jquery.min.js"></script>
-      	<script src="assets/js/min/plugins.min.js"></script>
-        <script src="assets/js/min/script.min.js"></script>
-		
-		<!-- == analytics == -->
-        
-        <!--  -->
-
-    </body>
-</html>
+        <div id="nav">
+                <a href="index.php">Home</a> | <a href="page2.php">Page 2</a>
+        </div>
