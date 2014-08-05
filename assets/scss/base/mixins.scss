@@ -5,10 +5,11 @@
     transition: $time;
 }
 
-@mixin boxy() {
+@mixin bxsizing() {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-//@include transition(2.0s);
-//@include boxy();
+// Usage:
+// @include transition(2.0s);
+// @include boxy();
