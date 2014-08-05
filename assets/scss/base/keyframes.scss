@@ -11,3 +11,7 @@
 	50%{-moz-transform: scale(0.9);}
 	100%{-moz-transform: scale(1);}
 }
+
+// Usage:
+// -webkit-animation: pulse 3s linear infinite;
+// -webkit-animation-play-state: paused;
