@@ -398,7 +398,7 @@ th {
 
 /* Mixins
 ================================================== */
-/* keyframes
+/* Keyframes
 ================================================== */
 @-webkit-keyframes pulse {
   0% {
@@ -426,6 +426,8 @@ th {
     -moz-transform: scale(1);
   }
 }
+/* Fonts
+================================================== */
 @font-face {
   font-family: 'Bebas Neubook';
   src: url("../fonts/bebasneue_book-webfont.eot");
