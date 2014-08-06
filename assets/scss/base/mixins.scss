@@ -1,13 +1,35 @@
+/* Mixins
+================================================== */
+
 @mixin transition($time) {
     -webkit-transition: $time;
     -moz-transition: $time;
     -o-transition: $time;
     transition: $time;
 }
-
-@mixin bxsizing() {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+@mixin bxsizing(){
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+@mixin bxshadow(){
+	-moz-box-shadow: 0 0 1px $black; 
+	-webkit-box-shadow: 0 0 1px $black; 
+	box-shadow: 0 0 1px $black;
+}
+@mixin bgsize(){
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+@mixin bradius($percent){
+	border-radius: $percent;
+	-moz-border-radius: $percent;
+	-webkit-border-radius: $percent;
+}
+@mixin trans($trans){
+	-webkit-transform: translateY($trans);
+	-moz-transform: translateY($trans);
+	transform: translateY($trans);
 }
 
 // Usage:

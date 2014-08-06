@@ -396,6 +396,8 @@ th {
   padding: 0;
 }
 
+/* Mixins
+================================================== */
 /* keyframes
 ================================================== */
 @-webkit-keyframes pulse {
@@ -530,8 +532,8 @@ th {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -webkit-font-smoothing: antialiased !important;
   border: none;
   height: 1%;
