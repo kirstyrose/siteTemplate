@@ -1,4 +1,8 @@
-<? $page_title = "Page One - Template"; include 'header.inc.php'; ?>
+<? 
+	$page = "page1"
+	$page_title = "Page One - Template"; 
+	include 'header.inc.php'; 
+?>
 
 
     <p>this is page one</p>
