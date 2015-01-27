@@ -62,6 +62,12 @@
 
 			@extend .box;
 			@include width($i, 0%); 
+			@include mq($tab--lrg){
+				@include width(2,0%);
+			}
+			@include mq($mob){
+				@include width(1,0%);
+			}
 
 		}
 
