@@ -1,0 +1,269 @@
+/* ==================================Import styles======================================== */
+/* ==================================Variables======================================== */
+/* ========================================  
+
+  NOTES:
+
+  eg :-
+
+  ../img/folder/image.jpg
+  font-family: $primaryFont;
+
+========================================  */
+/* ==================================Mixins======================================== */
+/* ====================================================== 
+	
+	NOTES:
+
+	Mixin usage Guide
+
+	@include mq($max, 650px) {value}
+	@include clearfix();
+	@include bxsizing();
+	@include transition(0.5s);
+	@mixin bxshadow(0.5);
+	
+
+	.box-2 {
+
+		float: left;
+		height: 600px;
+		position: relative;
+		@include width(2, 0%); 
+
+	}
+
+====================================================== */
+/* ==================================Reset======================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-size: 100%; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+.scale-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+.border-light {
+  border: 1px solid #fcfcfc; }
+
+.border-dark {
+  border: 1px solid #444444; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+.clearfix {
+  *zoom: 1; }
+
+/* ========================================  
+
+  NOTES:
+
+  People seem to like using clearfix, so I have left it in. FYI:
+
+  Float block elements.
+  GG
+  Don’t float anything else.
+  Is your floated block in something that isn’t floating?
+  Just put overflow hidden on the things it’s in.
+  GG
+
+========================================  */
+/* ==================================Typography======================================== */
+body {
+  font-family: Century Gothic, sans-serif; }
+
+a, a:active {
+  color: #444444;
+  text-decoration: none; }
+
+a:hover {
+  color: #444444;
+  text-decoration: underline; }
+
+.alpha-header, .alpha-header--dark, .alpha-header--light {
+  font-size: 22px;
+  color: #444444;
+  font-family: Century Gothic, sans-serif;
+  letter-spacing: 1.5px;
+  line-height: auto; }
+  .alpha-header--dark {
+    color: #444444; }
+  .alpha-header--light {
+    color: #fcfcfc; }
+
+.copy, .copy--dark, .copy--light {
+  font-family: Century Gothic, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  font-weight: normal; }
+  .copy--dark {
+    color: #444444; }
+  .copy--light {
+    color: #fcfcfc; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.heavy {
+  font-weight: 600; }
+
+/* ==================================Layout======================================== */
+.wrap, .wrap--bg-dark, .wrap--bg-light, .wrap--borderme {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  clear: both;
+  height: auto;
+  position: relative; }
+  .wrap--bg-dark {
+    background: #444444; }
+  .wrap--bg-light {
+    background: #fcfcfc; }
+  .wrap--borderme {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden; }
+
+.box, .box--1, .box--2, .box--3, .box--4, .box--5, .box--6, .box--7, .box--8, .box--9, .box--10, .box--11, .box--12, .box--np, .box--padme {
+  width: 100%;
+  padding: 10px 0;
+  margin: 0 auto;
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+  .box--1 {
+    width: 100%;
+    margin-right: 0%; }
+    .box--1.last {
+      margin-right: 0; }
+    .box--1:nth-of-type(1n+0) {
+      margin-right: 0; }
+  .box--2 {
+    width: 50%;
+    margin-right: 0%; }
+    .box--2.last {
+      margin-right: 0; }
+    .box--2:nth-of-type(2n+0) {
+      margin-right: 0; }
+  .box--3 {
+    width: 33.33333%;
+    margin-right: 0%; }
+    .box--3.last {
+      margin-right: 0; }
+    .box--3:nth-of-type(3n+0) {
+      margin-right: 0; }
+  .box--4 {
+    width: 25%;
+    margin-right: 0%; }
+    .box--4.last {
+      margin-right: 0; }
+    .box--4:nth-of-type(4n+0) {
+      margin-right: 0; }
+  .box--5 {
+    width: 20%;
+    margin-right: 0%; }
+    .box--5.last {
+      margin-right: 0; }
+    .box--5:nth-of-type(5n+0) {
+      margin-right: 0; }
+  .box--6 {
+    width: 16.66667%;
+    margin-right: 0%; }
+    .box--6.last {
+      margin-right: 0; }
+    .box--6:nth-of-type(6n+0) {
+      margin-right: 0; }
+  .box--7 {
+    width: 14.28571%;
+    margin-right: 0%; }
+    .box--7.last {
+      margin-right: 0; }
+    .box--7:nth-of-type(7n+0) {
+      margin-right: 0; }
+  .box--8 {
+    width: 12.5%;
+    margin-right: 0%; }
+    .box--8.last {
+      margin-right: 0; }
+    .box--8:nth-of-type(8n+0) {
+      margin-right: 0; }
+  .box--9 {
+    width: 11.11111%;
+    margin-right: 0%; }
+    .box--9.last {
+      margin-right: 0; }
+    .box--9:nth-of-type(9n+0) {
+      margin-right: 0; }
+  .box--10 {
+    width: 10%;
+    margin-right: 0%; }
+    .box--10.last {
+      margin-right: 0; }
+    .box--10:nth-of-type(10n+0) {
+      margin-right: 0; }
+  .box--11 {
+    width: 9.09091%;
+    margin-right: 0%; }
+    .box--11.last {
+      margin-right: 0; }
+    .box--11:nth-of-type(11n+0) {
+      margin-right: 0; }
+  .box--12 {
+    width: 8.33333%;
+    margin-right: 0%; }
+    .box--12.last {
+      margin-right: 0; }
+    .box--12:nth-of-type(12n+0) {
+      margin-right: 0; }
+  .box--np {
+    padding: 0; }
+  .box--padme {
+    padding: 30px; }
+
+/*# sourceMappingURL=main.css.map */

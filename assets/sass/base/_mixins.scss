@@ -1,0 +1,121 @@
+/* ==================================Mixins======================================== */
+
+$min: min-width;
+$max: max-width;
+
+@mixin mq($value, $axis: false) {
+
+	@if $axis {
+
+		@media screen and ("max-"+$axis: $value) {
+
+			@content;
+
+		}
+
+	} @else {
+
+		@media screen and (max-width: $value) {
+
+			@content;
+
+		}
+		
+	}
+
+}
+
+// Clearfix
+@mixin clearfix {
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear:both;
+	}
+
+	& {
+		*zoom:1;
+	}
+	
+}
+
+// Box Sizing
+@mixin bxsizing {
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+}
+
+// Transition
+@mixin transition($sec) {
+
+	transition: $sec;
+	-webkit-transition: $sec;
+	-moz-transition: $sec;
+	-o-transition: $sec;
+
+}
+
+// Box Shadow
+@mixin bxshadow($value) {
+
+	transition: $value;
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-o-transition: $value;
+
+}
+
+// Sizing - kudos to WsCandy
+@mixin width($count, $margin) {
+
+	width: (1 / $count * 100%) - $margin + ($margin / $count);
+	margin-right: $margin;
+
+	// This is an IE8 Fix, I know it's stupid, don't tell me.
+	
+	&.last {
+
+		margin-right: 0;
+
+	}
+	
+	&:nth-of-type(#{($count)+"n+0"}) {
+		
+		margin-right: 0;
+		
+	}
+ 
+}
+
+/* ====================================================== 
+	
+	NOTES:
+
+	Mixin usage Guide
+
+	@include mq($max, 650px) {value}
+	@include clearfix();
+	@include bxsizing();
+	@include transition(0.5s);
+	@mixin bxshadow(0.5);
+	
+
+	.box-2 {
+
+		float: left;
+		height: 600px;
+		position: relative;
+		@include width(2, 0%); 
+
+	}
+
+====================================================== */

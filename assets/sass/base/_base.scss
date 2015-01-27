@@ -1,0 +1,40 @@
+/* ==================================Reset======================================== */
+
+* {padding: 0; margin: 0; box-sizing: border-box; -moz-box-sizing: border-box}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body {font-size: 100%;}
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+
+// Scale
+
+.scale-img {
+  max-width: 100%;
+  width:100%;
+  height: auto;
+}
+
+.border-light { border: 1px solid $secondaryColor;}
+.border-dark { border: 1px solid $primaryColor;}
+
+// Clearfix
+
+.clearfix {
+  @include clearfix;
+}
+
+/* ========================================  
+
+  NOTES:
+
+  People seem to like using clearfix, so I have left it in. FYI:
+
+  Float block elements.
+  GG
+  Don’t float anything else.
+  Is your floated block in something that isn’t floating?
+  Just put overflow hidden on the things it’s in.
+  GG
+
+========================================  */

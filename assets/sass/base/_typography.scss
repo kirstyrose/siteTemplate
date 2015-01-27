@@ -1,0 +1,61 @@
+/* ==================================Typography======================================== */
+
+body {
+    font-family: $primaryFont;
+}
+
+a, a:active { color:$primaryColor; text-decoration: none;}
+a:hover { color:$primaryColor; text-decoration: underline;}
+
+.alpha-header {
+
+    font-size: $massive;
+    color: $primaryColor;
+    font-family: $primaryFont;
+    letter-spacing: 1.5px;
+    line-height: auto;
+
+    &--dark {
+
+        @extend .alpha-header;
+        color: $primaryColor;
+
+    }
+    &--light {
+        
+        @extend .alpha-header;
+        color: $secondaryColor;
+
+    }
+
+}
+
+.copy {
+
+    font-family: $primaryFont;
+    font-size: $medium;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    font-weight: normal;
+
+    &--dark {
+
+        @extend .copy;
+        color: $primaryColor;
+
+    }
+    &--light {
+        
+        @extend .copy;
+        color: $secondaryColor;
+    }
+
+}
+
+.align-left {text-align: left;}
+.align-center {text-align: center;}
+.align-right {text-align: right;}
+.align-justify {text-align: justify;}
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
+.heavy {font-weight: 600;}

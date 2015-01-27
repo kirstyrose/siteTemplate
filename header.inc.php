@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="author" href="Kirsty Rose"/>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/main.css">
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     </head>
 

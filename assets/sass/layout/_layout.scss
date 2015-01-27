@@ -1,0 +1,84 @@
+/* ==================================Layout======================================== */
+
+// Basic Structure
+
+.wrap {
+	
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	clear: both;
+	height: auto;
+	position: relative;
+
+	&--bg-dark {
+
+		@extend .wrap;
+		background: $primaryColor;
+
+	}
+
+	&--bg-light {
+
+		@extend .wrap;
+		background: $secondaryColor;
+
+	}
+
+	&--borderme {
+
+		@extend .wrap;
+		border-top: 1px solid $quaternaryColor;
+		border-bottom: 1px solid $quaternaryColor;
+
+	}
+
+}
+
+.container {
+
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	overflow: hidden;
+
+}
+
+.box {
+	
+	width: 100%;
+	padding: 10px 0;
+	margin: 0 auto;
+	padding: 5px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+
+	@for $i from 1 through 12 {
+
+		&--#{$i} {
+
+			@extend .box;
+			@include width($i, 0%); 
+
+		}
+
+	}
+
+	&--np {
+
+		@extend .box;
+		padding: 0;
+
+	}
+
+	&--padme {
+
+		@extend .box;
+		padding: 30px;
+
+	}
+
+}

@@ -1,0 +1,18 @@
+/* ==================================Import styles======================================== */
+
+// Structure
+	
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+
+// Layout	
+
+@import "layout/layout";
+
+// Any pages eg:
+
+// @import "layout/index";
+// @import "layout/about";
+// @import "layout/contact";

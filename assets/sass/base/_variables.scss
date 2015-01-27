@@ -1,0 +1,44 @@
+/* ==================================Variables======================================== */
+
+// Pathing
+$imgsrc:  "../img";
+$fontsrc: "../fonts";
+
+// Fonts
+$primaryFont:   Century Gothic, sans-serif;
+$secondaryFont: Georgia, serif;
+
+// Colors
+$black:		#000;
+$white:		#fcfcfc;
+$charcoal:	#444;
+$grey:		#ccc;
+
+
+$primaryColor:   $charcoal; 
+$secondaryColor: $white; 
+$tertiaryColor:  $black; 
+$quaternaryColor: $grey;
+
+// Sizing
+$small:   10px;
+$medium:  15px;
+$large:   18px;
+$massive: 22px;
+
+// Mq
+$mob:      480px;
+$mob--lrg: 640px;
+$tab:      768px;
+$tab--lrg: 820px; 
+
+/* ========================================  
+
+  NOTES:
+
+  eg :-
+
+  #{$imgsrc}/folder/image.jpg
+  font-family: $primaryFont;
+
+========================================  */
