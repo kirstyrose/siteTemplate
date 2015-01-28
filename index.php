@@ -1,5 +1,5 @@
 <? 
-	$page = "page1"
+	$page = "page1";
 	$page_title = "Page One - Template"; 
 	include 'header.inc.php'; 
 ?>
@@ -29,7 +29,7 @@
 			</p>
 		</div>
 
-		<div class="box--padme">
+		<div class="box--2 box--padme">
 			<p class="copy--light">
 				two column padded layout
 				<br><br>

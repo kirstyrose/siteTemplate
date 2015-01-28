@@ -1,5 +1,5 @@
 <? 
-	$page = "page2"
+	$page = "page2";
 	$page_title = "Page Two - Template"; 
 	include 'header.inc.php'; 
 ?>
