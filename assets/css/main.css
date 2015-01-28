@@ -1,6 +1,6 @@
 /* ==================================Import styles======================================== */
 /* ==================================Variables======================================== */
-/* ========================================  
+/* ========================================
 
   NOTES:
 
@@ -144,6 +144,23 @@ a:hover {
 
 .heavy {
   font-weight: 600; }
+
+.btn, .btn--red, .btn--yellow, .btn--green, .btn--blue {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 8px;
+  color: #fcfcfc;
+  margin-bottom: 10px;
+  height: 25px;
+  line-height: 25px; }
+  .btn--red {
+    background: #c40233; }
+  .btn--yellow {
+    background: #ffd300; }
+  .btn--green {
+    background: #009f6b; }
+  .btn--blue {
+    background: #0087bd; }
 
 /* ==================================Layout======================================== */
 .wrap, .wrap--bg-dark, .wrap--bg-light, .wrap--borderme {

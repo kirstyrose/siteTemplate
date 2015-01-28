@@ -1,0 +1,22 @@
+.btn {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0 8px;
+	color: $white;
+	margin-bottom: 10px;
+	height: 25px;
+	line-height: 25px;
+
+	// How many/which colors do we want - Look in _varibles.scss
+	$colors: $red $yellow $green $blue;
+
+	@each $color in $colors {
+   	 	$name: nth($color, 1);
+   	 	$color: nth($color, 2);
+
+   	 	&--#{$name} {
+   	 		@extend .btn;
+			background: $color;
+		}
+	}
+}

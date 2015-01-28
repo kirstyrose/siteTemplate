@@ -14,10 +14,22 @@ $white:		#fcfcfc;
 $charcoal:	#444;
 $grey:		#ccc;
 
+// NCS
+$red: #C40233;
+$yellow: #FFD300;
+$green: #009F6B;
+$blue: #0087BD;
 
-$primaryColor:   $charcoal; 
-$secondaryColor: $white; 
-$tertiaryColor:  $black; 
+// btn colors
+$red: (red $red);
+$yellow: (yellow $yellow);
+$green: (green $green);
+$blue: (blue $blue);
+
+
+$primaryColor:   $charcoal;
+$secondaryColor: $white;
+$tertiaryColor:  $black;
 $quaternaryColor: $grey;
 
 // Sizing
@@ -26,13 +38,13 @@ $medium:  15px;
 $large:   18px;
 $massive: 22px;
 
-// Mq
+// Media Queries
 $mob:      480px;
 $mob--lrg: 640px;
 $tab:      768px;
-$tab--lrg: 820px; 
+$tab--lrg: 820px;
 
-/* ========================================  
+/* ========================================
 
   NOTES:
 
