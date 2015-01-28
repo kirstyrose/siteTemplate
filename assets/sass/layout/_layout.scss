@@ -62,11 +62,32 @@
 
 			@extend .box;
 			@include width($i, 0%); 
+
 			@include mq($tab--lrg){
-				@include width(2,0%);
+
+				$half: round($i/2);
+
+				@include width($half,0%);
+
+					@if(($i / 2) % 1 != 0 and $i != 1) {
+						//
+
+					&:nth-of-type(#{($half) + 1}) {
+
+						margin-left: unquote((100 / $half) / 2 + "%");
+						clear: both;
+
+					}
+
+				}
+
 			}
+
 			@include mq($mob){
+
 				@include width(1,0%);
+				margin-left: 0!important;
+
 			}
 
 		}

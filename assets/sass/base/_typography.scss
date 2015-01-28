@@ -4,8 +4,8 @@ body {
     font-family: $primaryFont;
 }
 
-a, a:active { color: $primaryColor; text-decoration: none; }
-a:hover { color: $primaryColor; text-decoration: underline; }
+a, a:active { color:$primaryColor; text-decoration: none;}
+a:hover { color:$primaryColor; text-decoration: underline;}
 
 .alpha-header {
 
