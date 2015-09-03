@@ -5,38 +5,37 @@ $imgsrc:  "../img";
 $fontsrc: "../fonts";
 
 // Fonts
-$primaryFont:   Century Gothic, sans-serif;
+$primaryFont:   Lucida Sans Unicode;
 $secondaryFont: Georgia, serif;
 
 // Colors
-$black:		#000;
-$white:		#fcfcfc;
-$charcoal:	#444;
-$grey:		#ccc;
+$black:	#161616;
+$white:	#fcfcfc;
+$skyblue:	#38b0de;
+$grey:	#ccc;
 
-// NCS
+// Natural Colour System
 $red: #C40233;
 $yellow: #FFD300;
 $green: #009F6B;
 $blue: #0087BD;
 
-// btn colors
+// Button colors
 $red: (red $red);
 $yellow: (yellow $yellow);
 $green: (green $green);
 $blue: (blue $blue);
 
-
-$primaryColor:   $charcoal;
+// Primary, secondary, tertiary Color scheme
+$primaryColor:   $skyblue;
 $secondaryColor: $white;
 $tertiaryColor:  $black;
-$quaternaryColor: $grey;
 
 // Sizing
-$small:   10px;
+$small:   7.5px;
 $medium:  15px;
-$large:   18px;
-$massive: 22px;
+$large:   30px;
+$massive: 60px;
 
 // Media Queries
 $mob:      480px;

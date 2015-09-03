@@ -74,6 +74,26 @@ $max: max-width;
 
 }
 
+// Border Radius
+@mixin bradius($value) {
+
+	border-radius: ($value);
+	-moz-border-radius: ($value);
+	-webkit-border-radius: ($value);
+	-o-border-radius: ($value);
+
+}
+
+// Center Element (set parent to postion: relative)
+@mixin center {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
 // Sizing - kudos to WsCandy
 @mixin width($count, $margin) {
 
@@ -106,16 +126,8 @@ $max: max-width;
 	@include clearfix();
 	@include bxsizing();
 	@include transition(0.5s);
-	@mixin bxshadow(0.5);
+
+	etc.
 	
-
-	.box-2 {
-
-		float: left;
-		height: 600px;
-		position: relative;
-		@include width(2, 0%); 
-
-	}
 
 ====================================================== */

@@ -1,8 +1,6 @@
 /* ==================================Layout======================================== */
 
-// Basic Structure
-
-.wrap {
+.wrap, header, footer {
 	
 	width: 100%;
 	height: auto;
@@ -12,25 +10,24 @@
 	height: auto;
 	position: relative;
 
-	&--bg-dark {
+	&--bg-primary {
 
 		@extend .wrap;
 		background: $primaryColor;
 
 	}
 
-	&--bg-light {
+	&--bg-secondary {
 
 		@extend .wrap;
 		background: $secondaryColor;
 
 	}
 
-	&--borderme {
+	&--bg-tertiary {
 
 		@extend .wrap;
-		border-top: 1px solid $quaternaryColor;
-		border-bottom: 1px solid $quaternaryColor;
+		background: $tertiaryColor;
 
 	}
 
@@ -41,17 +38,37 @@
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 0.5%;
 	overflow: hidden;
+
+	&--bg-primary {
+
+		@extend .container;
+		background: $primaryColor;
+
+	}
+
+	&--bg-secondary {
+
+		@extend .container;
+		background: $secondaryColor;
+
+	}
+
+	&--bg-tertiary {
+
+		@extend .container;
+		background: $tertiaryColor;
+
+	}
 
 }
 
 .box {
 	
 	width: 100%;
-	padding: 10px 0;
 	margin: 0 auto;
-	padding: 5px;
+	padding: 0.5%;
 	overflow: hidden;
 	float: left;
 	position: relative;
@@ -83,7 +100,7 @@
 
 			}
 
-			@include mq($mob){
+			@include mq($mob) {
 
 				@include width(1,0%);
 				margin-left: 0!important;

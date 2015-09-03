@@ -10,13 +10,15 @@ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 // Scale
 
 .scale-img {
+
   max-width: 100%;
   width:100%;
   height: auto;
+
 }
 
-.border-light { border: 1px solid $secondaryColor;}
-.border-dark { border: 1px solid $primaryColor;}
+.border-light { border: 1px solid $white; }
+.border-dark { border: 1px solid $black; }
 
 // Clearfix
 

@@ -1,32 +1,77 @@
 /* ==================================Typography======================================== */
 
 body {
+
     font-family: $primaryFont;
+    // Font Smoothing
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 }
 
-a, a:active { color:$primaryColor; text-decoration: none;}
-a:hover { color:$primaryColor; text-decoration: underline;}
+a, a:active { color: $tertiaryColor; text-decoration: none;}
+a:hover { color: $tertiaryColor; text-decoration: underline;}
 
 .alpha-header {
 
     font-size: $massive;
     color: $primaryColor;
-    font-family: $primaryFont;
+    font-family: $secondaryFont;
     letter-spacing: 1.5px;
     line-height: auto;
 
     &--dark {
 
         @extend .alpha-header;
-        color: $primaryColor;
+        color: $tertiaryColor;
 
     }
+
     &--light {
         
         @extend .alpha-header;
         color: $secondaryColor;
+    }
+
+    @include mq($mob--lrg) {
+
+        font-size: $large;
 
     }
+
+}
+
+.beta-header {
+
+    font-size: $large;
+    font-family: $secondaryFont;
+    letter-spacing: 1.5px;
+    line-height: auto;
+
+    &--dark {
+
+        @extend .beta-header;
+        color: $tertiaryColor;
+
+    }
+
+    &--light {
+        
+        @extend .beta-header;
+        color: $secondaryColor;
+    }
+
+}
+
+.gamma-header {
+
+    font-size: $medium;
+    font-family: $secondaryFont;
+    letter-spacing: 1.5px;
+    padding: 1%;
+    line-height: auto;
+    font-weight: 700;
+    color: $primaryColor;
 
 }
 
@@ -34,16 +79,18 @@ a:hover { color:$primaryColor; text-decoration: underline;}
 
     font-family: $primaryFont;
     font-size: $medium;
-    letter-spacing: 0.8px;
-    line-height: 1.2;
+    letter-spacing: 0.5px;
+    padding: 0.5%;
+    line-height: 1.5;
     font-weight: normal;
 
     &--dark {
 
         @extend .copy;
-        color: $primaryColor;
+        color: $tertiaryColor;
 
     }
+
     &--light {
         
         @extend .copy;
@@ -52,6 +99,7 @@ a:hover { color:$primaryColor; text-decoration: underline;}
 
 }
 
+// Assign quick styles
 .align-left {text-align: left;}
 .align-center {text-align: center;}
 .align-right {text-align: right;}

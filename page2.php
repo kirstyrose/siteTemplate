@@ -4,8 +4,11 @@
 	include 'header.inc.php'; 
 ?>
 
-
-    <p>this is page two</p>
-
+<section class="wrap">
+	<div class="container">
+		<p class="copy--dark">This is page two.</p>
+	</div>
+</section>
+    
 
 <? include 'footer.inc.php'; ?>
